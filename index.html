@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Tanushree 🎂</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:
+    radial-gradient(circle at 20% 20%, #40105f 0%, transparent 35%),
+    radial-gradient(circle at 80% 30%, #132b65 0%, transparent 35%),
+    linear-gradient(135deg,#050014,#100020,#030817);
+  color:white;
+  overflow-x:hidden;
+}
+
+section{
+  min-height:100vh;
+  padding:90px 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+.container{
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+/* INTRO */
+
+#intro{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:linear-gradient(135deg,#050014,#180025,#020817);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  transition:1s;
+}
+
+#intro.hide{
+  opacity:0;
+  pointer-events:none;
+}
+
+.intro-title{
+  font-size:20px;
+  letter-spacing:4px;
+  color:#ddd;
+}
+
+.gift{
+  width:120px;
+  height:100px;
+  margin:35px;
+  position:relative;
+  cursor:pointer;
+  animation:float 2s infinite ease-in-out;
+}
+
+.gift-box{
+  position:absolute;
+  bottom:0;
+  width:120px;
+  height:75px;
+  background:#ff3d81;
+  border-radius:8px;
+}
+
+.gift-box:before{
+  content:"";
+  position:absolute;
+  left:48px;
+  width:22px;
+  height:75px;
+  background:#ffd166;
+}
+
+.gift-lid{
+  position:absolute;
+  top:15px;
+  left:-7px;
+  width:134px;
+  height:25px;
+  background:#ff6398;
+  border-radius:8px;
+}
+
+.gift-lid:before{
+  content:"";
+  position:absolute;
+  left:55px;
+  width:20px;
+  height:25px;
+  background:#ffd166;
+}
+
+@keyframes float{
+  50%{transform:translateY(-15px)}
+}
+
+.open-text{
+  color:#aaa;
+  font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+  background:
+    radial-gradient(circle at 50% 45%,rgba(255,70,150,.16),transparent 30%);
+}
+
+.small-title{
+  letter-spacing:5px;
+  color:#ff9dc4;
+  font-size:14px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(70px,13vw,150px);
+  color:#fff;
+  text-shadow:0 0 30px rgba(255,80,170,.8);
+  margin:10px 0;
+}
+
+.hero h2{
+  font-size:clamp(20px,4vw,34px);
+  font-weight:400;
+}
+
+.date{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 25px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:50px;
+  backdrop-filter:blur(10px);
+}
+
+/* BALLOONS */
+
+.balloon{
+  position:absolute;
+  width:55px;
+  height:70px;
+  border-radius:50% 50% 48% 48%;
+  opacity:.85;
+  animation:balloonFloat 7s infinite ease-in-out;
+}
+
+.balloon:after{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:100px;
+  background:rgba(255,255,255,.4);
+  left:50%;
+  top:68px;
+}
+
+.b1{background:#ff4f91;left:7%;top:20%;animation-delay:0s}
+.b2{background:#ffd166;right:8%;top:28%;animation-delay:1s}
+.b3{background:#7c5cff;left:13%;bottom:20%;animation-delay:2s}
+.b4{background:#43d9c3;right:13%;bottom:18%;animation-delay:3s}
+.b5{background:#ff795d;left:3%;top:55%;animation-delay:1.5s}
+.b6{background:#f7a8ff;right:3%;top:60%;animation-delay:2.5s}
+
+@keyframes balloonFloat{
+  50%{transform:translateY(-35px) rotate(5deg)}
+}
+
+/* TITLES */
+
+.section-title{
+  font-family:'Great Vibes',cursive;
+  font-size:65px;
+  color:#ff9bc4;
+  margin-bottom:15px;
+}
+
+.section-subtitle{
+  color:#aaa;
+  margin-bottom:45px;
+}
+
+/* MESSAGE */
+
+.message-box{
+  max-width:800px;
+  margin:auto;
+  padding:45px;
+  border-radius:30px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  backdrop-filter:blur(18px);
+  box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
+
+.message-box p{
+  line-height:2;
+  color:#ddd;
+  font-size:17px;
+}
+
+.signature{
+  margin-top:25px;
+  font-family:'Great Vibes',cursive;
+  font-size:40px;
+  color:#ff8ebd;
+}
+
+/* WISH CARDS */
+
+.wishes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+}
+
+.wish{
+  padding:30px 20px;
+  border-radius:25px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+  transition:.4s;
+}
+
+.wish:hover{
+  transform:translateY(-10px);
+  background:rgba(255,255,255,.1);
+}
+
+.wish .emoji{
+  font-size:45px;
+  margin-bottom:15px;
+}
+
+.wish h3{
+  margin-bottom:10px;
+  color:#fff;
+}
+
+.wish p{
+  color:#aaa;
+  line-height:1.7;
+}
+
+/* CAKES */
+
+.cakes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.cake-card{
+  padding:30px 20px;
+  border-radius:28px;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.1);
+}
+
+.cake{
+  font-size:100px;
+  animation:cakeBounce 2s infinite ease-in-out;
+}
+
+.cake-card:nth-child(2) .cake{
+  animation-delay:.3s;
+}
+
+.cake-card:nth-child(3) .cake{
+  animation-delay:.6s;
+}
+
+@keyframes cakeBounce{
+  50%{transform:translateY(-8px)}
+}
+
+.cake-card h3{
+  margin:10px 0;
+  color:#ffb1cf;
+}
+
+.cake-card p{
+  color:#aaa;
+}
+
+/* CANDLE */
+
+.candle-area{
+  margin-top:50px;
+  padding:45px;
+  border-radius:30px;
+  background:rgba(255,255,255,.05);
+}
+
+.big-cake{
+  font-size:130px;
+}
+
+.candle-btn,
+.music-btn{
+  border:none;
+  padding:14px 28px;
+  border-radius:50px;
+  background:linear-gradient(90deg,#ff4f91,#9b5cff);
+  color:white;
+  font-size:15px;
+  cursor:pointer;
+  margin-top:20px;
+  box-shadow:0 10px 30px rgba(255,70,150,.3);
+}
+
+#candleMessage{
+  margin-top:15px;
+  color:#ffb0cf;
+}
+
+/* COUNTDOWN */
+
+.countdown{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:18px;
+}
+
+.time-box{
+  width:130px;
+  padding:25px 10px;
+  border-radius:22px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12);
+}
+
+.time-box span{
+  display:block;
+  font-size:40px;
+  font-weight:600;
+  color:#ff9bc4;
+}
+
+.time-box small{
+  color:#aaa;
+}
+
+/* GALLERY */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:25px;
+  border:1px solid rgba(255,255,255,.15);
+  transition:.5s;
+}
+
+.gallery img:hover{
+  transform:scale(1.04) rotate(1deg);
+}
+
+/* FINAL */
+
+.final{
+  background:
+    radial-gradient(circle at center,rgba(255,70,160,.15),transparent 40%);
+}
+
+.final h1{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(70px,12vw,130px);
+  color:#ff9fc7;
+}
+
+.final p{
+  max-width:700px;
+  margin:20px auto;
+  color:#ccc;
+  line-height:1.9;
+  font-size:17px;
+}
+
+/* FLOATING */
+
+.sparkle{
+  position:fixed;
+  pointer-events:none;
+  animation:spark 4s linear forwards;
+  z-index:1000;
+}
+
+@keyframes spark{
+  from{
+    transform:translateY(0) scale(1);
+    opacity:1;
+  }
+  to{
+    transform:translateY(-100vh) scale(0);
+    opacity:0;
+  }
+}
+
+/* CONFETTI */
+
+.confetti{
+  position:fixed;
+  width:8px;
+  height:14px;
+  top:-20px;
+  z-index:10000;
+  animation:fall 3s linear forwards;
+}
+
+@keyframes fall{
+  to{
+    transform:translateY(110vh) rotate(720deg);
+    opacity:0;
+  }
+}
+
+@media(max-width:600px){
+  section{
+    padding:70px 15px;
+  }
+
+  .message-box{
+    padding:28px 20px;
+  }
+
+  .section-title{
+    font-size:50px;
+  }
+
+  .balloon{
+    transform:scale(.7);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+
+<div id="intro">
+  <div class="intro-title">A LITTLE SURPRISE FOR</div>
+
+  <div class="gift" onclick="openGift()">
+    <div class="gift-lid"></div>
+    <div class="gift-box"></div>
+  </div>
+
+  <div class="open-text">🎁 Click the gift to open your surprise 🎁</div>
+</div>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="balloon b1"></div>
+  <div class="balloon b2"></div>
+  <div class="balloon b3"></div>
+  <div class="balloon b4"></div>
+  <div class="balloon b5"></div>
+  <div class="balloon b6"></div>
+
+  <div class="container">
+
+    <div class="small-title">Today is a very special day</div>
+
+    <h1>Tanushree</h1>
+
+    <h2>✨ Happy Birthday ✨</h2>
+
+    <div class="date">
+      🎂 10 October 2026 🎂
+    </div>
+
+    <br>
+
+    <button class="music-btn" onclick="toggleMusic()">
+      🎵 Play Birthday Music
+    </button>
+
+    <audio id="music" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+  </div>
+</section>
+
+
+<!-- MAIN MESSAGE -->
+
+<section>
+<div class="container">
+
+  <div class="section-title">A Little Message 💌</div>
+  <div class="section-subtitle">Some words for your special day</div>
+
+  <div class="message-box">
+
+    <p>
+      Happy Birthday, Tanushree! 🎂✨
+      <br><br>
+
+      আজকের দিনটা তোমার জন্য অনেক সুন্দর হোক।
+      তোমার জীবনের প্রতিটি নতুন দিন যেন
+      নতুন আনন্দ, নতুন স্বপ্ন আর সুন্দর মুহূর্ত
+      নিয়ে আসে। 🌸
+      <br><br>
+
+      তোমার হাসি সবসময় এমনই সুন্দর থাকুক,
+      তোমার সব ভালো ইচ্ছা পূরণ হোক,
+      আর সামনে আসা প্রতিটি বছর
+      তোমার জন্য আরও সুন্দর হয়ে উঠুক। 💖
+      <br><br>
+
+      Keep smiling, keep shining,
+      and keep being the wonderful person you are. ✨
+    </p>
+
+    <div class="signature">
+      Once again... Happy Birthday! 🎉
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- MANY WISHES -->
+
+<section>
+<div class="container">
+
+  <div class="section-title">Birthday Wishes 🎀</div>
+  <div class="section-subtitle">A few more wishes just for you</div>
+
+  <div class="wishes">
+
+    <div class="wish">
+      <div class="emoji">🌸</div>
+      <h3>Happiness</h3>
+      <p>
+        May your days be filled with happiness,
+        laughter and beautiful memories.
+      </p>
+    </div>
+
+    <div class="wish">
+      <div class="emoji">✨</div>
+      <h3>Dreams</h3>
+      <p>
+        May every beautiful dream you have
+        slowly turn into reality.
+      </p>
+    </div>
+
+    <div class="wish">
+      <div class="emoji">🌈</div>
+      <h3>Beautiful Days</h3>
+      <p>
+        May every tomorrow bring something
+        brighter and better.
+      </p>
+    </div>
+
+    <div class="wish">
+      <div class="emoji">🦋</div>
+      <h3>New Beginnings</h3>
+      <p>
+        May this new year of your life bring
+        exciting adventures and opportunities.
+      </p>
+    </div>
+
+    <div class="wish">
+      <div class="emoji">🌟</div>
+      <h3>Keep Shining</h3>
+      <p>
+        Never stop believing in yourself.
+        You have many wonderful things ahead.
+      </p>
+    </div>
+
+    <div class="wish">
+      <div class="emoji">🎁</div>
+      <h3>Special Moments</h3>
+      <p>
+        May this birthday become one of those
+        memories you always remember with a smile.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- CAKES -->
+
+<section>
+<div class="container">
+
+  <div class="section-title">Birthday Cakes 🎂</div>
+  <div class="section-subtitle">Because one cake is never enough!</div>
+
+  <div class="cakes">
+
+    <div class="cake-card">
+      <div class="cake">🎂</div>
+      <h3>Birthday Cake</h3>
+      <p>
+        A sweet cake for a very special day.
+      </p>
+    </div>
+
+    <div class="cake-card">
+      <div class="cake">🧁</div>
+      <h3>Sweet Surprise</h3>
+      <p>
+        A little sweetness to make today brighter.
+      </p>
+    </div>
+
+    <div class="cake-card">
+      <div class="cake">🍰</div>
+      <h3>One More Slice</h3>
+      <p>
+        Because birthdays deserve extra dessert!
+      </p>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- CANDLE -->
+
+<section>
+<div class="container">
+
+  <div class="section-title">Make A Wish 🕯️</div>
+  <div class="section-subtitle">
+    Close your eyes and make a beautiful birthday wish.
+  </div>
+
+  <div class="candle-area">
+
+    <div id="bigCake" class="big-cake">
+      🎂
+    </div>
+
+    <button class="candle-btn" onclick="blowCandle()">
+      💨 Blow the Candles
+    </button>
+
+    <div id="candleMessage"></div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- COUNTDOWN -->
+
+<section>
+<div class="container">
+
+  <div class="section-title">The Big Day 🎉</div>
+
+  <div class="section-subtitle">
+    Countdown to 10 October 2026
+  </div>
+
+  <div class="countdown">
+
+    <div class="time-box">
+      <span id="days">00</span>
+      <small>Days</small>
+    </div>
+
+    <div class="time-box">
+      <span id="hours">00</span>
+      <small>Hours</small>
+    </div>
+
+    <div class="time-box">
+      <span id="minutes">00</span>
+      <small>Minutes</small>
+    </div>
+
+    <div class="time-box">
+      <span id="seconds">00</span>
+      <small>Seconds</small>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- PHOTO GALLERY -->
+
+<section>
+<div class="container">
+
+  <div class="section-title">Beautiful Memories 📸</div>
+  <div class="section-subtitle">
+    Add your favorite pictures here
+  </div>
+
+  <div class="gallery">
+
+    <img src="photo1.jpg" alt="Memory 1">
+
+    <img src="photo2.jpg" alt="Memory 2">
+
+    <img src="photo3.jpg" alt="Memory 3">
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+<div class="container">
+
+  <div class="small-title">
+    One last thing...
+  </div>
+
+  <h1>Happy Birthday!</h1>
+
+  <p>
+    🎈 May your smile stay bright,
+    your dreams stay big,
+    and your future be filled with
+    countless beautiful moments. 🎈
+    <br><br>
+
+    Have the most wonderful birthday,
+    Tanushree! 🎂✨
+  </p>
+
+  <button class="candle-btn" onclick="celebrate()">
+    🎉 Celebrate!
+  </button>
+
+</div>
+
+</section>
+
+
+<script>
+
+/* OPEN GIFT */
+
+function openGift(){
+
+  document.getElementById("intro").classList.add("hide");
+
+  setTimeout(()=>{
+    celebrate();
+  },700);
+}
+
+
+/* MUSIC */
+
+let playing=false;
+
+function toggleMusic(){
+
+  const music=document.getElementById("music");
+
+  if(!playing){
+    music.play().catch(()=>{});
+    playing=true;
+  }else{
+    music.pause();
+    playing=false;
+  }
+}
+
+
+/* COUNTDOWN */
+
+const birthday =
+new Date("2026-10-10T00:00:00").getTime();
+
+function updateCountdown(){
+
+  const now=new Date().getTime();
+  const distance=birthday-now;
+
+  if(distance<=0){
+
+    document.getElementById("days").innerText="00";
+    document.getElementById("hours").innerText="00";
+    document.getElementById("minutes").innerText="00";
+    document.getElementById("seconds").innerText="00";
+
+    return;
+  }
+
+  const days=Math.floor(
+    distance/(1000*60*60*24)
+  );
+
+  const hours=Math.floor(
+    (distance%(1000*60*60*24))/(1000*60*60)
+  );
+
+  const minutes=Math.floor(
+    (distance%(1000*60*60))/(1000*60)
+  );
+
+  const seconds=Math.floor(
+    (distance%(1000*60))/1000
+  );
+
+  document.getElementById("days").innerText=
+    String(days).padStart(2,"0");
+
+  document.getElementById("hours").innerText=
+    String(hours).padStart(2,"0");
+
+  document.getElementById("minutes").innerText=
+    String(minutes).padStart(2,"0");
+
+  document.getElementById("seconds").innerText=
+    String(seconds).padStart(2,"0");
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
+
+/* CANDLE */
+
+function blowCandle(){
+
+  document.getElementById("bigCake").innerHTML="🍰";
+
+  document.getElementById("candleMessage").innerHTML=
+    "✨ Wish made! May it come true. ✨";
+
+  celebrate();
+}
+
+
+/* CONFETTI */
+
+function celebrate(){
+
+  for(let i=0;i<100;i++){
+
+    const confetti=document.createElement("div");
+
+    confetti.className="confetti";
+
+    confetti.style.left=
+      Math.random()*100+"vw";
+
+    confetti.style.animationDuration=
+      (2+Math.random()*3)+"s";
+
+    confetti.style.transform=
+      `rotate(${Math.random()*360}deg)`;
+
+    confetti.style.background=
+      `hsl(${Math.random()*360},90%,65%)`;
+
+    document.body.appendChild(confetti);
+
+    setTimeout(()=>{
+      confetti.remove();
+    },5000);
+  }
+}
+
+
+/* FLOATING SPARKLES */
+
+function sparkle(){
+
+  const s=document.createElement("div");
+
+  s.className="sparkle";
+
+  const icons=["✨","⭐","💖","🌸","🎈"];
+
+  s.innerText=
+    icons[Math.floor(Math.random()*icons.length)];
+
+  s.style.left=
+    Math.random()*100+"vw";
+
+  s.style.bottom="-20px";
+
+  s.style.fontSize=
+    (12+Math.random()*20)+"px";
+
+  document.body.appendChild(s);
+
+  setTimeout(()=>{
+    s.remove();
+  },4000);
+}
+
+setInterval(sparkle,700);
+
+</script>
+
+</body>
+</html>
